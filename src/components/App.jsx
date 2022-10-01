@@ -7,8 +7,8 @@ import EditAvatarPopup from "./EditAvatarPopup";
 import EditProfilePopup from "./EditProfilePopup";
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 import api from "../utilities/Api";
+import * as auth from '../utilities/auth';
 import AddPlacePopup from "./AddPlacePopup";
-
 const App = () => {
     const [ isEditProfilePopupOpen, setEditProfilePopupOpen ] = useState(false);
     const [ isAddPlacePopupOpen, setAddPlacePopupOpen ] = useState(false);
