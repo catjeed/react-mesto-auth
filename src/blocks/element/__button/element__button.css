@@ -1,0 +1,11 @@
+.element__button {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    object-fit: cover;
+    background-position: 50%;
+    transition: 0.2s;
+}

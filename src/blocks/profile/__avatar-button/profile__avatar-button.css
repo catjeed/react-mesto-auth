@@ -1,0 +1,26 @@
+.profile__avatar-button {
+    object-fit: contain;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    justify-self: center;
+}
+.profile__avatar-button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.profile__avatar-button:hover::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(../../../images/Vectorpen.svg);
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,10 @@
+.popup__card {
+    position: relative;
+    max-height: 75vh;
+    max-width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+}
