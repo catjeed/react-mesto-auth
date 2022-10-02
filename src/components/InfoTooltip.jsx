@@ -1,11 +1,16 @@
-import React from 'react';
+import success from '../images/success.svg';
+import failed from '../images/failed.svg';
 
-const InfoTooltip = () => {
+const InfoToolTip = ({isOpen, isSuccess, onClose}) => {
     return (
-        <div>
-
+        <div className={isOpen ? `popup tooltip-popup tooltip-popup_opened` : `popup tooltip-popup`}>
+            <div className="tooltip-popup__container">
+                <img src={isSuccess ? success : failed} alt="Информация об авторизации" className="tooltip-popup__picture"/>
+                <p className="tooltip-popup__title">{isSuccess ? 'Вы успешно зарегистрировались!' : 'Что-то пошло не так! Попробуйте ещё раз.'}</p>
+                <button type="button" className="popup__close-button" onClick={onClose}></button>
+            </div>
         </div>
     );
-};
+}
 
-export default InfoTooltip;
+export default InfoToolTip;
