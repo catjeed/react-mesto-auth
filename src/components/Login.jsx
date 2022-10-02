@@ -24,9 +24,7 @@ const Login = ({onLogin}) => {
                 <h2 className="login__title">Вход</h2>
                 <form className="login__form" name="login" onSubmit={handleSubmit}>
                     <input type="email" value={email || ""} onChange={handleEmailChange} className="login__input" name="email" placeholder="Email" required minLength="2" maxLength="40"/>
-                    <span className="login__error" id="login__email__error"></span>
                     <input type="password" value={password || ""} onChange={handlePasswordChange} className="login__input" name="password" placeholder="Пароль" required minLength="2" maxLength="200"/>
-                    <span className="login__error" id="login__password__error"></span>
                     <button type="submit" className="login__submit">Войти</button>
                 </form>
             </section>

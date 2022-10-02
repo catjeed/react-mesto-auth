@@ -108,7 +108,10 @@ const App = () => {
             setLoggedIn(true)
             history.push("/")
         })
-            .catch(err => console.log(err))
+            .catch(err => {
+                console.log(err)
+                setIsRegisterPopupOpen(true);
+            })
     }
 
     const handleLogout = () => {
@@ -134,16 +137,14 @@ const App = () => {
     });
 
     useEffect(() => {
+        if (!loggedIn) return;
         api.getUserInfo()
             .then((res) => setCurrentUser(res))
             .catch((err) => console.log(err))
-    }, []);
-
-    useEffect(() => {
         api.getInitialCards()
             .then((res) => setCards(res))
             .catch((err) => console.error(err));
-    }, []);
+    }, [loggedIn]);
 
     return (
         <CurrentUserContext.Provider value={currentUser}>

@@ -1,6 +1,5 @@
 import {useContext} from "react";
 import Card from "./Card";
-import '../index.css';
 import {CurrentUserContext} from "../contexts/CurrentUserContext";
 import Header from "./Header";
 
