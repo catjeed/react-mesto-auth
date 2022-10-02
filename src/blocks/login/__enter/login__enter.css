@@ -1,0 +1,15 @@
+.login__enter{
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  background-color: transparent;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+.login__enter:hover {
+  opacity: 0.6;
+}
