@@ -14,5 +14,5 @@
 7. Webpack
 8. Подключение к API
 9. React и React Хуки
-# Ссылка на проект:
-https://catjeed.github.io/mesto-react/
+## Планы по доработке
+Переписать проект на новую версию react-router-dom
