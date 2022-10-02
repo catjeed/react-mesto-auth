@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react"
 import Header from "./Header"
 
-function Register({onRegister}){
+function Register({ onRegister }){
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
